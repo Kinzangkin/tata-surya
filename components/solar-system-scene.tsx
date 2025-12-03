@@ -104,7 +104,7 @@ export default function SolarSystemScene({ selectedPlanet }: SolarSystemScenePro
     mercury: { dist: 18, speed: 0.04, scale: 0.04, zoom: 15, url: "/images/merkurius/source/Merkurius.glb" },
     venus: { dist: 28, speed: 0.015, scale: 0.10, zoom: 22, url: "/images/venus.glb" },
     earth: { dist: 40, speed: 0.01, scale: 0.11, zoom: 25, url: "/images/earth/source/Untitled.glb" },
-    mars: { dist: 55, speed: 0.008, scale: 0.07, zoom: 26, url: "/images/mars/source/Mars.glb" },
+    mars: { dist: 55, speed: 0.008, scale: 0.07, zoom: 26, url: "/images/mars/source/mars.glb" },
     jupiter: { dist: 85, speed: 0.002, scale: 1.2, zoom: 45, url: "/images/jupiter.glb" },
     saturn: { dist: 125, speed: 0.0009, scale: 1.0, zoom: 50, url: "/images/saturn.glb" },
     uranus: { dist: 165, speed: 0.0004, scale: 0.55, zoom: 55, url: "/images/uranus.glb" },
