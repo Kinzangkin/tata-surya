@@ -31,6 +31,32 @@ export default function PlanetGLB({
   const [normalizedScale, setNormalizedScale] = useState(1)
 
   const gltf = useGLTF(modelUrl)
+const angleRef = useRef(0)
+
+useFrame((state, delta) => {
+  if (!meshRef.current) return
+
+  // ⏳ Tambah sudut untuk orbit
+  angleRef.current += speed * delta * 1.2
+
+  // 🌍 Hitung posisi pada orbit
+  const x = Math.cos(angleRef.current) * distance
+  const z = Math.sin(angleRef.current) * distance
+
+  meshRef.current.position.set(x, 0, z)
+
+  // 🔁 Rotasi planet di tempat
+  meshRef.current.rotation.y += 0.5 * delta
+
+  // 🔍 Smooth scale animasi
+  const targetScale =
+    normalizedScale * scale * GLOBAL_SCALE * (selected ? 1.15 : 1)
+
+  const current = meshRef.current.scale.x
+  meshRef.current.scale.setScalar(current + (targetScale - current) * 0.12)
+})
+
+
 
   // Debug cek material
   useEffect(() => {

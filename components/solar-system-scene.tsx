@@ -99,7 +99,6 @@ function OrbitalLines({ distances }: { distances: number[] }) {
 }
 
 export default function SolarSystemScene({ selectedPlanet }: SolarSystemSceneProps) {
-  // 🔥 Konsisten, cinematic, dan mudah diatur
   const planets = {
     mercury: { dist: 18, speed: 1.04, scale: 0.04, zoom: 15, url: "/images/merkurius/source/Merkurius.glb" },
     venus: { dist: 28, speed: 1.015, scale: 0.10, zoom: 22, url: "/images/venus.glb" },
