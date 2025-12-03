@@ -101,14 +101,14 @@ function OrbitalLines({ distances }: { distances: number[] }) {
 export default function SolarSystemScene({ selectedPlanet }: SolarSystemSceneProps) {
   // 🔥 Konsisten, cinematic, dan mudah diatur
   const planets = {
-    mercury: { dist: 18, speed: 0.04, scale: 0.04, zoom: 15, url: "/images/merkurius/source/Merkurius.glb" },
-    venus: { dist: 28, speed: 0.015, scale: 0.10, zoom: 22, url: "/images/venus.glb" },
-    earth: { dist: 40, speed: 0.01, scale: 0.11, zoom: 25, url: "/images/earth/source/Untitled.glb" },
-    mars: { dist: 55, speed: 0.008, scale: 0.07, zoom: 26, url: "/images/mars/source/mars.glb" },
-    jupiter: { dist: 85, speed: 0.002, scale: 1.2, zoom: 45, url: "/images/jupiter.glb" },
-    saturn: { dist: 125, speed: 0.0009, scale: 1.0, zoom: 50, url: "/images/saturn.glb" },
-    uranus: { dist: 165, speed: 0.0004, scale: 0.55, zoom: 55, url: "/images/uranus.glb" },
-    neptune: { dist: 210, speed: 0.0001, scale: 0.50, zoom: 60, url: "/images/neptune.glb" },
+    mercury: { dist: 18, speed: 1.04, scale: 0.04, zoom: 15, url: "/images/merkurius/source/Merkurius.glb" },
+    venus: { dist: 28, speed: 1.015, scale: 0.10, zoom: 22, url: "/images/venus.glb" },
+    earth: { dist: 40, speed: 1.01, scale: 0.11, zoom: 25, url: "/images/earth/source/Untitled.glb" },
+    mars: { dist: 55, speed: 1.008, scale: 0.07, zoom: 26, url: "/images/mars/source/mars.glb" },
+    jupiter: { dist: 85, speed: 1.002, scale: 1.2, zoom: 45, url: "/images/jupiter.glb" },
+    saturn: { dist: 125, speed: 1.0009, scale: 1.0, zoom: 50, url: "/images/saturn.glb" },
+    uranus: { dist: 165, speed: 1.0004, scale: 0.55, zoom: 55, url: "/images/uranus.glb" },
+    neptune: { dist: 210, speed: 1.0001, scale: 0.50, zoom: 60, url: "/images/neptune.glb" },
   }
 
   const planetData = Object.fromEntries(
